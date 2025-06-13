@@ -1,0 +1,8 @@
+NET / Docker
+bin/
+obj/
+.vscode/
+.docker/
+*.lock
+*.exe
+*.dll
