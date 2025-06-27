@@ -1,15 +1,24 @@
 .py-base {
   padding-block: var(--py-base);
 }
+
 .py-lg {
   padding-block: var(--py-lg);
 }
+
 .py-xl {
   padding-block: var(--py-xl);
 }
 
 .px-lg {
-  padding-inline: var(--px-lg);
+  padding-block: var(--px-lg);
+}
+
+.container {
+  --max-width: 375px;
+  width: min(var(--max-width), 100% - var(--px-lg) * 2);
+  margin-inline: auto;
+  /* border: solid violet; */
 }
 
 .desktop-only {
@@ -32,18 +41,13 @@
 .gap-1 {
   gap: 1rem;
 }
+
 .gap-1\.5 {
   gap: 1.5rem;
 }
 
 .grid {
   display: grid;
-}
-
-.container {
-  --max-width: 375px;
-  width: min(var(--max-width), 100% - var(--px-lg) * 2);
-  margin-inline: auto;
 }
 
 @media (width >= 80em) {
